@@ -1,0 +1,23 @@
+<h1 *ngIf="true">hi sri</h1>
+
+<h1 *ngIf="data;else name">laoding ...</h1>
+
+
+
+<h1 *ngIf="!data; else name">ngif else condition</h1>
+
+<ng-template #name>
+  this is ng template{{data}}
+</ng-template>
+
+<h1>
+  <ol>
+    <li>ngif</li>
+    <li>ngif *ngIf="expression;else templateName"</li>
+    <li>ngif then else</li>
+  </ol>
+</h1>
+
+
+
+
