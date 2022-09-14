@@ -1,1 +1,23 @@
-<h1>ngfor</h1>
+<h1 *ngFor=" let n of num;index as i">ngfor{{i}}{{n}}</h1>
+
+<table>
+  <tr *ngFor=" let n of num;index as i">
+    <td>
+      data{{i+1}}
+    </td>
+  </tr>
+</table>
+<hr>
+
+<input type="text" [(ngModel)]="op">
+
+
+<div [ngSwitch]="op">
+
+  <div *ngSwitchCase="'+'">{{num1}}+{{num2}} = {{num1+num2}}</div>
+  <div *ngSwitchCase="'-'">{{num1}}-{{num2}} = {{num1-num2}}</div>
+  <div *ngSwitchCase="'*'">{{num1}}*{{num2}} = {{num1*num2}}</div>
+  <div *ngSwitchCase="'/'">{{num1}}/{{num2}} = {{num1/num2}}</div>
+  <div *ngSwitchDefault="'+'">invalod match</div>
+
+</div>

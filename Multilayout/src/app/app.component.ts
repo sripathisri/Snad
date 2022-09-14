@@ -6,10 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  num = ['1','2','3','4','5']
-
-  num1:number=4;
-  num2:number=6;
-
-  op:string = ''
+  title = 'Multilayout';
 }
