@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { HttpService } from 'src/app/services/http.service';
 
 @Component({
   selector: 'app-login',
@@ -7,11 +7,8 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-login(_t8: any) {
-throw new Error('Method not implemented.');
-}
 
-  constructor() { }
+  constructor(private http: HttpService) { }
 
   ngOnInit(): void {
   }
