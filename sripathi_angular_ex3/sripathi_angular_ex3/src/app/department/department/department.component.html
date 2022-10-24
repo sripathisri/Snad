@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <app-header></app-header>
+      <div class="h">
+        <br />
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Dept ID</th>
+              <th>Dept Name</th>
+              <th>Dept Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of departments">
+              <td>{{ item.deptId }}</td>
+              <td>{{ item.deptName | uppercase }}</td>
+              <td>{{ item.deptLocation }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Designed By SNAD Develpers</p>
+    </div>
+  </div>
+</div>
